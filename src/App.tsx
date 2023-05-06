@@ -28,11 +28,6 @@ function App() {
   };
 
   return (
-    // <div className="maintaince">
-    //   <h1 className="maintaince-headline">
-    //     The website is currently down for maintenance. Please try again later.
-    //   </h1>
-    // </div>
     <div className="app" ref={homeRef}>
       <Toaster />
       <Navbar refList={refList} />
@@ -53,3 +48,9 @@ function App() {
 }
 
 export default App;
+
+// <div className="maintaince">
+//   <h1 className="maintaince-headline">
+//     The website is currently down for maintenance. Please try again later.
+//   </h1>
+// </div>

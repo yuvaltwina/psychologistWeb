@@ -1,0 +1,60 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 40rem;
+  width: clamp(19rem, 39vw, 27rem);
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content {
+  padding: 20px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 36px;
+  align-self: center;
+  color: var(--special-color);
+}
+
+.card-text {
+  margin: 0;
+  margin: 15px 0 20px 0;
+  line-height: 1.7;
+  font-weight: 549;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card-text-and-link {
+  display: flex;
+}
+
+.card-link {
+  color: var(--special-color);
+  text-decoration: none;
+  font-size: 18px;
+  margin: auto;
+}
+.card-link:hover {
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+
+@media (max-width: 770px) {
+  .card {
+    min-height: 30rem;
+    width: 80vw;
+  }
+}/*# sourceMappingURL=Card.css.map */

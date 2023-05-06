@@ -1,0 +1,107 @@
+@import "../../Style/Variables.scss";
+@import "../../App.css";
+.navbar-cover {
+  background-color: var(--background-color);
+  position: static;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  padding-inline: var(--inline-padding);
+  // box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+  //   0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  margin-bottom: 2rem;
+}
+.logo {
+  color: $text-color;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $text-color;
+  background-color: var(--background-color);
+  border: none;
+  font-weight: 550;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0.8rem 0rem;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.1s;
+    color: var(--special-color);
+  }
+}
+.nav-selcted {
+  color: var(--special-color) !important;
+
+  &:hover {
+    color: var(--special-color);
+  }
+}
+
+.drawer-and-button-container {
+  background: none;
+  border: none;
+  padding: 0rem;
+  margin-right: 2.42rem;
+  display: none;
+}
+.scroll-up-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 4rem;
+  background: none;
+  z-index: 1000;
+  border: none;
+  font-size: 2rem;
+  color: $secondary-color;
+  overflow: hidden;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    color: $text-color;
+  }
+}
+
+@media (max-width: 770px) {
+  .navbar-cover {
+    justify-content: flex-end;
+  }
+  .drawer-and-button-container {
+    display: flex;
+    // position: absolute;
+    background: none;
+    border: none;
+    padding: 0rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    // right: 2rem;
+    &:hover {
+      background-color: none;
+    }
+  }
+  .nav-list {
+    display: none;
+  }
+
+  // .contact {
+  //   display: none;
+  // }
+}

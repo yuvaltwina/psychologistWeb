@@ -1,0 +1,101 @@
+@import "../../App.css";
+.navbar-cover {
+  background-color: var(--background-color);
+  position: static;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.5rem;
+  padding-inline: var(--inline-padding);
+  margin-bottom: 2rem;
+}
+
+.logo {
+  color: #293560;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #293560;
+  background-color: var(--background-color);
+  border: none;
+  font-weight: 550;
+  text-align: center;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0.8rem 0rem;
+  cursor: pointer;
+}
+.nav-link:hover {
+  transition: all 0.1s;
+  color: var(--special-color);
+}
+
+.nav-selcted {
+  color: var(--special-color) !important;
+}
+.nav-selcted:hover {
+  color: var(--special-color);
+}
+
+.drawer-and-button-container {
+  background: none;
+  border: none;
+  padding: 0rem;
+  margin-right: 2.42rem;
+  display: none;
+}
+
+.scroll-up-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 4rem;
+  background: none;
+  z-index: 1000;
+  border: none;
+  font-size: 2rem;
+  color: #5193fb;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.scroll-up-button:hover {
+  cursor: pointer;
+  color: #293560;
+}
+
+@media (max-width: 770px) {
+  .navbar-cover {
+    justify-content: flex-end;
+  }
+  .drawer-and-button-container {
+    display: flex;
+    background: none;
+    border: none;
+    padding: 0rem;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+  .drawer-and-button-container:hover {
+    background-color: none;
+  }
+  .nav-list {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

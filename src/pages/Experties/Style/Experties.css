@@ -1,0 +1,66 @@
+.experties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px var(--inline-padding) 87px var(--inline-padding);
+}
+
+.experties-container {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.exprties-headline {
+  color: #293560;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 6rem;
+}
+
+.expertie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 10rem;
+}
+.expertie h6 {
+  font-size: 1.4rem;
+  color: #293560;
+  font-weight: 700;
+  margin-top: 2.2rem;
+  text-align: center;
+}
+
+.expertie-image {
+  width: clamp(9.2rem, 11vw, 14.5rem);
+  border-radius: 300px;
+  aspect-ratio: 1/1;
+  border: 2px solid rhgvar(--special-color);
+}
+
+@media (max-width: 1400px) {
+  .experties-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 770px) {
+  .expertie-image {
+    width: clamp(8.5rem, 11vw, 14rem);
+    border-radius: 300px;
+    aspect-ratio: 1/1;
+    border: 2px solid rhgvar(--special-color);
+  }
+  .expertie {
+    min-width: 36%;
+  }
+  .expertie h6 {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=Experties.css.map */

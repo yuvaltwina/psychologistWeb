@@ -10,7 +10,7 @@ import {
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-
+// הקליניקה ממוקמת בצפון תל אביב, שכונת אפקה,
 export const Home = ({ refList }) => {
   const CONTACTREF = refList.contact;
   return (
@@ -30,9 +30,11 @@ export const Home = ({ refList }) => {
               מטפל בגישה דינמית עם כלים מעולם ה CBT. אני מאמין כי לכל מטופל צריך
               להתאים את הגישה שמתאימה לו ולכן אני מקפיד על גמישות במהלך התהליך
               הטיפולי. מטפל במבוגרים ומתבגרים.<br></br> יש אפשרות גם לטיפול
-              אונליין. הקליניקה ממוקמת בצפון תל אביב, שכונת אפקה, להתייעצות או
-              קביעת מפגש ניתן ליצור קשר.
+              אונליין. להתייעצות או קביעת מפגש ניתן ליצור קשר.
             </p>
+            <span className="home-title-location">
+              הקליניקה ממוקמת בצפון תל אביב, שכונת אפקה.
+            </span>
             <button
               className="contact"
               onClick={() => {

@@ -1,6 +1,6 @@
-import React, { FC, useState } from "react";
-import "../Experience/Style/Experience.css";
-import { Card } from "../../components/Card/Card";
+import React, { FC, useState } from 'react';
+import '../Experience/Style/Experience.css';
+import { Card } from '../../components/Card/Card';
 // לאורך השנים עבדתי עם אוכלוסיות שונות ומגוונות שעזרו לי לרכוש ידע והבנה מעבר ללימודים האקדמיים.
 const experienceList = [
   {
